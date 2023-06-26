@@ -1,10 +1,12 @@
-const email = document.getElementById("email");
-form.addEventListener("submit", (e) => {
+
+addEventListener("submit", (e) => {
     e.preventDefault();
     checkInput();
+
 });
 
 function checkInput(){
+    const email = document.getElementById("email");
     const emailValue = email.value.trim();
     if(emailValue === ""){
         setErrorMessage(email, "Email Required!");
@@ -35,6 +37,8 @@ function isValidateEmail (email){
     const pattern = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return pattern.test(email);
 }
+
+
 // // $('.email-input').on('blur', function() {
 // //     console.log("jjj")
 // //     var email = $(this).val(); // Get the value of the email input field
