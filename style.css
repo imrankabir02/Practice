@@ -1,0 +1,22 @@
+.container{
+    min-height: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 5px auto;
+    padding: 1rem;
+    border: 2px solid #333;
+    background-color: #cddee9;
+    color: black;
+}
+
+.header{
+    border: #333;
+}
+
+.form-control.error small {
+    color: red;
+}
+
+.form-control.success small {
+    color: green;
+}
